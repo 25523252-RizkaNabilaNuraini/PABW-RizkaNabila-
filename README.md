@@ -15,13 +15,13 @@ Topik halaman saya: daftar lagu yang pernah saya dengarkan.
  
 - Berkas gaya yang akan dibuat: tokens.css, base.css,
   layout.css, komponen.css, tema.css
-- Warna utama: #4eee71 (biru), dipilih karena cocok
+- Warna utama: #4eee71 (hijau), dipilih karena cocok
  
 ### Token yang saya tetapkan
  
 | Token | Nilai | Untuk apa |
 |---|---|---|
-| --color-primary | #1D3A8C | tombol, tautan, penanda |
+| --color-primary | #aaeff1 | tombol, tautan, penanda |
 | --color-fg | #0F172A | warna teks utama |
 | --color-bg | #F8FAFC | latar halaman |
 | --radius-md | 0.5rem | sudut tombol dan kartu |
