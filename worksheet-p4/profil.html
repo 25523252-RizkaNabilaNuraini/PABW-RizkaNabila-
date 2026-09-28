@@ -14,6 +14,11 @@
 </head>
 <body>
      <header>
+      <!-- taruh di dalam <header>, sebelum judul -->
+      <input type="checkbox" id="tema" class="pengalih-tema">
+      <label for="tema" class="tombol-tema">Tema gelap</label>
+
+
     <h1>Daftar Lagu Saya</h1>
     <nav aria-label="Navigasi utama">
       <ul>
@@ -76,18 +81,27 @@
       <!-- form Anda nanti di sini (Lembar E) -->
        <form action="/simpan" method="post">
         <p>
-          <label for="judul">Judul Lagu</label>
-          <input type="text" id="judul" name="judul" required>
+          <div class="form-kolom">
+            <label for="judul">Judul Lagu</label>
+            <input type="text" id="judul" name="judul" required>
+            <span class="pesan-galat">Judul wajib diisi.</span>
+          </div>
         </p>
 
         <p>
-          <label for="penyanyi">Nama Penyanyi</label>
-          <input type="text" id="penyanyi" name="penyanyi" required>
+          <div class="form-kolom">
+            <label for="penyanyi">Nama Penyanyi</label>
+            <input type="text" id="penyanyi" name="penyanyi" required>
+            <span class="pesan-galat">Nama penyanyi wajib diisi.</span>
+          </div>
         </p>
 
         <p>
-          <label for="rating">Rating (1-5)</label>
-          <input type="number" id="rating" name="rating" min="1" max="5" required>
+          <div class="form-kolom">
+            <label for="rating">Rating (1-5)</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            <span class="pesan-galat">Rating harus antara 1 dan 5.</span>
+          </div>
         </p>
 
         <button type="submit">Simpan</button>

@@ -38,7 +38,7 @@ button {
 /* *:focus { outline: none; } */
 
 /* SALAH — form tampak merah padahal pengguna belum menyentuhnya */
-input:invalid { border-color: var(--color-danger); }
+/*input:invalid { border-color: var(--color-danger); }*/
  
 /* BENAR — hanya setelah pengguna mengetik sesuatu yang tidak sah */
 input:user-invalid {
