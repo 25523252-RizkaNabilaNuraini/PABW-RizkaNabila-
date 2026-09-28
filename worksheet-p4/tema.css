@@ -5,7 +5,7 @@
     --color-fg:      #E2E8F0;
     --color-surface: #1E293B;
     --color-border:  #334155;
-    --color-primary: #7DA9F7;   /* versi lebih terang agar kontras tetap lolos */
+    --color-primary: var(--cyan-primary);   /* versi lebih terang agar kontras tetap lolos */
     --color-danger:  #FF8A8A;
     --color-focus:   #FFC000;
     --shadow-1:      0 1px 3px rgba(0, 0, 0, .45);
@@ -23,7 +23,7 @@
   --color-fg:      #E2E8F0;
   --color-surface: #1E293B;
   --color-border:  #334155;
-  --color-primary: #7DA9F7;
+  --color-primary: var(--cyan-primary);
   --color-danger:  #FF8A8A;
   --color-focus:   #FFC000;
 }
