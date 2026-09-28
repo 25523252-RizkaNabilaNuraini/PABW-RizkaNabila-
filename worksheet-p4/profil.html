@@ -1,0 +1,107 @@
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Lagu Saya</title>
+
+  <!-- urutan ini yang benar: token -> dasar -> tata letak -> komponen -> tema -->
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+
+</head>
+<body>
+     <header>
+    <h1>Daftar Lagu Saya</h1>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#bagian-1">Daftar Lagu</a></li>
+        <li><a href="#bagian-2">Tambah Lagu</a></li>
+        <li><a href="#bagian-3">Tentang Saya</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+  <main>
+    <section id="bagian-1">
+      <h2>Daftar Lagu</h2>
+      <p>Daftar lagu yang pernah saya dengarkan</p>
+      <figure>
+        <img
+          src="Lagu.jpeg"
+          alt="Logo Spotify berupa lingkaran hijau dengan tiga garis melengkung berwarna putih di dalamnya"
+          width="640"
+          height="360"
+          loading="lazy"> 
+        <figcaption>Logo Spotify sebagai platform pemutar lagu digital</figcaption>
+      </figure>
+      <!-- tabel Anda nanti di sini (Lembar D) -->
+       <table>
+        <caption>Daftar Lagu yang Pernah Didengar</caption>
+        <thead>
+          <tr>
+            <th scope="col">Judul</th>
+            <th scope="col">Penyanyi</th>
+            <th scope="col">Album</th>
+            <th scope="col">Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Hati-Hati di Jalan</th>
+            <td>Tulus</td>
+            <td>Manusia</td>
+            <td>5/5</td>
+          </tr>
+          <tr>
+            <th scope="row">Sial</th>
+            <td>Mahalini</td>
+            <td>Fabula</td>
+            <td>4/5</td>
+          </tr>
+          <tr>
+            <th scope="row">Komang</th>
+            <td>Raim Laode</td>
+            <td>Komang</td>
+            <td>5/5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+ 
+    <section id="bagian-2">
+      <h2>Tambah Lagu</h2>
+      <!-- form Anda nanti di sini (Lembar E) -->
+       <form action="/simpan" method="post">
+        <p>
+          <label for="judul">Judul Lagu</label>
+          <input type="text" id="judul" name="judul" required>
+        </p>
+
+        <p>
+          <label for="penyanyi">Nama Penyanyi</label>
+          <input type="text" id="penyanyi" name="penyanyi" required>
+        </p>
+
+        <p>
+          <label for="rating">Rating (1-5)</label>
+          <input type="number" id="rating" name="rating" min="1" max="5" required>
+        </p>
+
+        <button type="submit">Simpan</button>
+      </form>
+    </section>
+ 
+    <section id="bagian-3">
+      <h2>Tentang Saya</h2>
+      <!-- informasi Anda nanti di sini (Lembar F) -->
+       <p>Halaman ini memuat tentang saya</p>
+    </section>
+  </main>
+ 
+  <footer>
+    <p>Rizka Nabila Nuraini · 25523252 · 2026</p>
+  </footer> 
+</body>
