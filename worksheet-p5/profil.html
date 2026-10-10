@@ -17,9 +17,13 @@
 <div class="page">
 
      <header>
+      <div class="header-baris">
+
+      <div>
       <!-- taruh di dalam <header>, sebelum judul -->
       <input type="checkbox" id="tema" class="pengalih-tema">
       <label for="tema" class="tombol-tema">Tema gelap</label>
+      </div>
 
 
     <h1>Daftar Lagu Saya</h1>
@@ -30,11 +34,27 @@
         <li><a href="#bagian-3">Tentang Saya</a></li>
       </ul>
     </nav>
+    </div>
   </header>
+
+  <main class="isi">
+
+    <aside class="sidebar">
+      <nav aria-label="Navigasi Samping">
+        <h3>Menu Utama</h3>
+        <ul>
+          <li><a href="#bagian-1">Daftar Lagu</a></li>
+          <li><a href="#bagian-2">Tambah Lagu</a></li>
+          <li><a href="#bagian-3">Tentang Saya</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+  <div class="konten-utama">
  
-  <main>
     <section id="bagian-1">
       <h2>Daftar Lagu</h2>
+
       <p>Daftar lagu yang pernah saya dengarkan</p>
       <figure>
         <img
@@ -45,6 +65,39 @@
           loading="lazy"> 
         <figcaption>Logo Spotify sebagai platform pemutar lagu digital</figcaption>
       </figure>
+
+        <h3>Katalog Lagu Populer</h3>
+        <div class="galeri">
+          <article class="kartu">
+            <h3>Hati-Hati di Jalan</h3>
+            <p>Penyanyi: Tulus</p>
+            <div class="kartu__kaki">
+              <span>Rating: 5/5</span>
+              <button type="button">Putar</button>
+            </div>
+          </article>
+
+          <article class="kartu">
+            <h3>Sial</h3>
+            <p>Penyanyi: Mahalini</p>
+            <div class="kartu__kaki">
+              <span>Rating: 4/5</span>
+              <button type="button">Putar</button>
+            </div>
+          </article>
+
+          <article class="kartu">
+            <h3>Komang</h3>
+            <p>Penyanyi: Raim Laode</p>
+            <div class="kartu__kaki">
+              <span>Rating: 5/5</span>
+              <button type="button">Putar</button>
+            </div>
+          </article>
+        </div>
+
+        <br>
+
       <!-- tabel Anda nanti di sini (Lembar D) -->
        <table>
         <caption>Daftar Lagu yang Pernah Didengar</caption>
@@ -83,29 +136,28 @@
       <h2>Tambah Lagu</h2>
       <!-- form Anda nanti di sini (Lembar E) -->
        <form action="/simpan" method="post">
-        <p>
           <div class="form-kolom">
             <label for="judul">Judul Lagu</label>
             <input type="text" id="judul" name="judul" required>
             <span class="pesan-galat">Judul Lagu wajib diisi.</span>
           </div>
-        </p>
+          <br>
 
-        <p>
+      
           <div class="form-kolom">
             <label for="penyanyi">Nama Penyanyi</label>
             <input type="text" id="penyanyi" name="penyanyi" required>
             <span class="pesan-galat">Nama penyanyi wajib diisi.</span>
           </div>
-        </p>
+        <br>
 
-        <p>
+        
           <div class="form-kolom">
             <label for="rating">Rating (1-5)</label>
             <input type="number" id="rating" name="rating" min="1" max="5" required>
             <span class="pesan-galat">Rating harus antara 1 dan 5.</span>
           </div>
-        </p>
+        <br>
 
         <button type="submit">Simpan</button>
       </form>
@@ -116,10 +168,13 @@
       <!-- informasi Anda nanti di sini (Lembar F) -->
        <p>Halaman ini memuat tentang saya</p>
     </section>
+    </div>
   </main>
  
   <footer>
     <p>Rizka Nabila Nuraini · 25523252 · 2026</p>
   </footer>
-  </div> 
+  
 </body>
+ </div>
+ </html>
