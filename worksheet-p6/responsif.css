@@ -1,4 +1,4 @@
-.content {
+.content, .isi, .konten-utama {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-4);
