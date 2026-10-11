@@ -32,3 +32,24 @@ console.log(formatKeahlian(profil.keahlian));
 
 window.buatPerkenalan = buatPerkenalan;
 window.formatKeahlian = formatKeahlian;
+
+console.table(profil.keahlian);
+console.table(daftarLagu);
+
+
+const laguFavorit = daftarLagu.filter((lagu) => lagu.selesai === true);
+console.table(laguFavorit);
+
+
+const cariLagu = daftarLagu.find((lagu) => lagu.judul === "Komang");
+console.log("Hasil pencarian find:", cariLagu);
+
+
+const daftarJudul = daftarLagu.map((lagu) => lagu.judul);
+console.log("Hasil map judul lagu:", daftarJudul);
+
+
+window.daftarLagu = daftarLagu;
+window.laguFavorit = laguFavorit;
+window.cariLagu = cariLagu;
+window.daftarJudul = daftarJudul;
