@@ -20,3 +20,15 @@ console.log(kalimatPerkenalan);
 
 window.profil = profil;
 window.daftarLagu = daftarLagu;
+
+function buatPerkenalan({ nama, peran }) {
+  return `${nama} — ${peran}`;
+}
+
+const formatKeahlian = (daftar) => daftar.join(" · ");
+
+console.log(buatPerkenalan(profil));
+console.log(formatKeahlian(profil.keahlian));
+
+window.buatPerkenalan = buatPerkenalan;
+window.formatKeahlian = formatKeahlian;
