@@ -30,5 +30,11 @@ Topik halaman saya: daftar lagu yang pernah saya dengarkan.
 Kriteria selesai saya: mengubah --color-primary di satu baris
 harus mengubah warna tombol, tautan, judul, dan garis fokus.
 
+## Pertemuan 5 — Layout Modern: Flexbox dan Grid
+
+## Pertemuan 6 — Responsif Mobile-First
+
+## Pertemuan 8 — Membuat Halaman Profil yang Datanya Bergerak 
+
 ## Catatan penggunaan AI
-Saya menggunakan AI pada bagian tautan navigasi
+Saya menggunakan AI pada bagian tautan navigasi, daftar lagu, kartu di komponen.css, navigasi samping dan article class di profil.html, di bagian window app.js. Sejujurnya 50 : 50 penggunaan AI nya.
