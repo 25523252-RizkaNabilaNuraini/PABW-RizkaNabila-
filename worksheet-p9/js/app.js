@@ -7,10 +7,10 @@ const profil = {
 };
 
 
-const daftarLagu = [
-  { judul: "Hati-Hati di Jalan", penyanyi: "Tulus", album: "Manusia", rating: "5/5", selesai: true },
-  { judul: "Sial", penyanyi: "Mahalini", album: "Fabula", rating: "4/5", selesai: true },
-  { judul: "Komang", penyanyi: "Raim Laode", album: "Komang", rating: "5/5", selesai: true }
+export const daftarLagu = [
+  { judul: "Hati-Hati di Jalan", penyanyi: "Tulus", album: "Manusia", rating: "5/5", kategori: "pop", selesai: true },
+  { judul: "Sial", penyanyi: "Mahalini", album: "Fabula", rating: "4/5", kategori: "pop", selesai: true },
+  { judul: "Komang", penyanyi: "Raim Laode", album: "Komang", rating: "5/5", kategori: "jazz", selesai: true }
 ];
 
 let pilihanAktif = "semua";
