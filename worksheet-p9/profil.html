@@ -153,7 +153,7 @@
        <form action="/simpan" method="post">
           <div class="form-kolom">
             <label for="judul">Judul Lagu</label>
-            <input type="text" id="judul" name="judul" required>
+            <input type="text" id="judul" name="judul" required pattern=".*\S.*">
             <span class="pesan-galat">Judul Lagu wajib diisi.</span>
           </div>
           <br>
@@ -161,7 +161,7 @@
       
           <div class="form-kolom">
             <label for="penyanyi">Nama Penyanyi</label>
-            <input type="text" id="penyanyi" name="penyanyi" required>
+            <input type="text" id="penyanyi" name="penyanyi" required pattern=".*\S.*">
             <span class="pesan-galat">Nama penyanyi wajib diisi.</span>
           </div>
         <br>
