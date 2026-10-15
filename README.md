@@ -36,5 +36,7 @@ harus mengubah warna tombol, tautan, judul, dan garis fokus.
 
 ## Pertemuan 8 — Membuat Halaman Profil yang Datanya Bergerak 
 
+## Pertemuan 9 — Mounting Data into the Page and Responding to the User 
+
 ## Catatan penggunaan AI
-Saya menggunakan AI pada bagian tautan navigasi, daftar lagu, kartu di komponen.css, navigasi samping dan article class di profil.html, di bagian window app.js. Sejujurnya 50 : 50 penggunaan AI nya.
+Saya menggunakan AI pada bagian tautan navigasi, daftar lagu, kartu dan filter di komponen.css, navigasi samping dan article class di profil.html, di bagian window app.js, pada dom.js dibagian const. Sejujurnya 50 : 50 penggunaan AI nya.
