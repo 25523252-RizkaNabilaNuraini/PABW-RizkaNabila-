@@ -5,11 +5,11 @@ const container = document.querySelector(".galeri");
 const pesanKosong = document.querySelector("#pesan-kosong");
 
 const terjemahanAPI = [
-  { judul: "Pengantar Pemrograman Web Modern", body: "Mempelajari dasar-dasar pengembangan antarmuka menggunakan HTML, CSS, dan JavaScript." },
-  { judul: "Manajemen Struktur Data dan Array", body: "Memahami cara mengolah data array dan objek secara efektif dalam aplikasi web." },
-  { judul: "Integrasi Asynchronous API", body: "Mengambil data eksternal secara asinkron menggunakan fetch, promise, async, dan await." },
-  { judul: "Pemisahan Layer Data dan Tampilan", body: "Menerapkan prinsip modular dengan memisahkan fungsi logika API dan perenderan DOM." },
-  { judul: "Penanganan Status Antarmuka Web", body: "Mengelola status loading, success, failure, dan empty state dengan baik pada halaman." }
+  { judul: "Rekomendasi Lagu Populer Minggu Ini", body: "Daftar lagu pilihan dengan aransemen musik yang sedang hits di berbagai platform digital." },
+  { judul: "Profil Musisi dan Penyanyi Favorit", body: "Mengenal lebih dekat perjalanan karier dan karya-karya dari musisi papan atas." },
+  { judul: "Ulasan Album Musik Terbaru", body: "Bedah album dan lirik lagu mendalam dari musisi indie hingga pop mainstream." },
+  { judul: "Konser Musik dan Festival Digital", body: "Informasi jadwal panggung live streaming dan pertunjukan musik interaktif." },
+  { judul: "Tips Menikmati Audio Berkualitas Tinggi", body: "Panduan memilih perangkat pemutar musik dan format audio terbaik untuk pengalaman mendengarkan." }
 ];
 
 function buildCard(item, index) {
@@ -70,9 +70,8 @@ async function loadAPIData() {
 
     const apiData = await fetchNews();
     
-    // Batasi data API hanya 5 item saja
     const limitedData = apiData.slice(0, 5);
-    
+
     render(limitedData); 
   } catch (error) {
     container.style.display = "block";
@@ -80,10 +79,8 @@ async function loadAPIData() {
   }
 }
 
-// Memuat data API saat halaman pertama kali dibuka
 loadAPIData();
 
-// Logika filter kategori lagu Anda tetap aman dan tidak berubah
 const filterRow = document.querySelector("#filter");
 
 if (filterRow) {
